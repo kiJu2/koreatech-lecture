@@ -1,0 +1,621 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>코로나 안전 여행지 API</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>여행</h1>
+							<p class="major">코로나로부터 안전한 여행을 위해.</p>
+							<ul class="actions stacked">
+								<!-- <li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li> -->
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/banner.jpg" alt="" />
+						</div>
+					</section>
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>당신에게 제공합니다.</h2>
+							<p>코로나로 인해 많은 피해를 받고 있습니다. 여러분의 안전을 위하여, 보다 안전한 위치와 데이터를 제공해드립니다.</p>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span class="icon style2 major fa-star"></span>
+									<h3>추천</h3>
+									<p>비교적 안전한 행사와 여행지를 제공해드립니다.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>조회</h3>
+									<p>기간별로, 지역별로, 해당 지역이 안전한지, 어떠한 행사와 공연이 있는지 조회해보세요.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-car"></span>
+									<h3>여행</h3>
+									<p>가고 싶은 여행지 대한 정보를 확인해보세요. 다양한 데이터를 제공해드립니다.</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Code -->
+				<section class="wrapper style1 align-center">
+					<div class="inner">
+						<div class="index align-left">
+
+
+							<section>
+								<header>
+									<h3>공연 정보</h3>
+								</header>
+								<div class="content">
+
+									<h4>Request</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>항목명(국문)</th>
+													<th>항목명(영문)</th>
+													<th>샘플 데이터</th>
+													<th>항목 설명</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>시도</td>
+													<td>from</td>
+													<td>서울</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>구군</td>
+													<td>gugun</td>
+													<td>강서구</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>시작 날짜</td>
+													<td>from</td>
+													<td>20200620</td>
+													<td>년도월일</td>
+												</tr>
+												<tr>
+													<td>종료 날짜</td>
+													<td>to</td>
+													<td>20201220</td>
+													<td>년도월일</td>
+												</tr>
+												<tr>
+													<td>페이지</td>
+													<td>cPage</td>
+													<td>3</td>
+													<td> - </td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h4>Response</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>항목명(국문)</th>
+													<th>항목명(영문)</th>
+													<th>샘플 데이터</th>
+													<th>항목 설명</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>전체 데이터 수</td>
+													<td>totalCount</td>
+													<td>283</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>열</td>
+													<td>rows</td>
+													<td>10</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>시작 날짜</td>
+													<td>from</td>
+													<td>20200620</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>종료 날짜</td>
+													<td>to</td>
+													<td>20201220</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>페이지</td>
+													<td>cPage</td>
+													<td>3</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>순서</td>
+													<td>seq</td>
+													<td>159771</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>제목</td>
+													<td>title</td>
+													<td>발달장애인청년작가</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>행사시작날짜</td>
+													<td>startDate</td>
+													<td>20200618</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>행사종료날짜</td>
+													<td>endDate</td>
+													<td>20201022</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>장소</td>
+													<td>place</td>
+													<td>갤러리 라메르</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>분야</td>
+													<td>realmName</td>
+													<td>미술</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>지역</td>
+													<td>area</td>
+													<td>서울</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>썸네일</td>
+													<td>thumbnail</td>
+													<td>url/.....</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>경도</td>
+													<td>gpsX</td>
+													<td>126.111</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>위도</td>
+													<td>gpsY</td>
+													<td>37.44</td>
+													<td> - </td>
+												</tr>
+											</tbody>
+											
+										</table>
+									</div>
+
+								</div>
+							</section>
+						<!-- Code -->
+						<section>
+							<header>
+								<h3>Code</h3>
+							</header>
+							<div class="content">
+								<pre>
+									<code>
+curl --include --request GET
+'http://13.124.205.66:8001/kor_lec/lkj/api/
+information_on_performances_around_tourist_attractions.php?
+sido=서울&from=20200620&to=20201220&cPage=3'
+									</code>
+								</pre>
+							</div>
+						</section>
+							<section>
+								<header>
+									<h3>시/도 정보 조회</h3>
+								</header>
+								<div class="content">
+									<h4>Request</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>항목명(국문)</th>
+													<th>항목명(영문)</th>
+													<th>샘플 데이터</th>
+													<th>항목 설명</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>시도 코드</td>
+													<td>city_num</td>
+													<td>17</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>날짜</td>
+													<td>Date</td>
+													<td>20201212</td>
+													<td> - </td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h4>Response</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>항목명(국문)</th>
+													<th>항목명(영문)</th>
+													<th>샘플 데이터</th>
+													<th>항목 설명</th>
+												</tr>
+											</thead>
+												<tr>
+													<td>확진자 수</td>
+													<td>def_cnt</td>
+													<td>13561</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>격리중 환자수</td>
+													<td>isolIngCnt</td>
+													<td>9</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>해외 유입 수</td>
+													<td>overFlowCnt</td>
+													<td>14</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>지역 발생 수</td>
+													<td>localOccCnt</td>
+													<td>7</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>날씨</td>
+													<td>main</td>
+													<td>Clouds</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>날씨 설명</td>
+													<td>description</td>
+													<td>broken clouds</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>온도</td>
+													<td>temp</td>
+													<td>273.14</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>감정지수</td>
+													<td>feels_like</td>
+													<td>269.11</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>최저 온도</td>
+													<td>temp_min</td>
+													<td>272.15</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>최대 온도</td>
+													<td>temp_max</td>
+													<td>275.15</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>풍속</td>
+													<td>speed</td>
+													<td>2.6</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>풍향</td>
+													<td>deg</td>
+													<td>310</td>
+													<td> - </td>
+												</tr>
+											</tbody>
+											
+										</table>
+									</div>
+
+								</div>
+							</section>
+<!-- Code -->
+							<section>
+								<header>
+									<h3>Code</h3>
+								</header>
+								<div class="content">
+									<pre>
+										<code>
+curl --include --request GET
+'http://13.124.205.66:8001/kor_lec/lkj/api/
+specific_location_weather_and_corona_information.php?city_num=17&date=20201212'
+										</code>
+									</pre>
+								</div>
+							</section>
+							<section>
+								<header>
+									<h3>n명 미만의 확진자 수 지역정보</h3>
+								</header>
+								<div class="content">
+									<h4>Request</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>항목명(국문)</th>
+													<th>항목명(영문)</th>
+													<th>샘플 데이터</th>
+													<th>항목 설명</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>날짜</td>
+													<td>date</td>
+													<td>20201022</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>확진자 수</td>
+													<td>covid_num</td>
+													<td>100</td>
+													<td> - </td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h4>Response</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>항목명(국문)</th>
+													<th>항목명(영문)</th>
+													<th>샘플 데이터</th>
+													<th>항목 설명</th>
+												</tr>
+											</thead>
+											<tr>
+												<td>날씨</td>
+												<td>main</td>
+												<td>Clouds</td>
+												<td> - </td>
+											</tr>
+											<tr>
+												<td>날씨 설명</td>
+												<td>description</td>
+												<td>broken clouds</td>
+												<td> - </td>
+											</tr>
+											<tr>
+												<td>온도</td>
+												<td>temp</td>
+												<td>273.14</td>
+												<td> - </td>
+											</tr>
+											<tr>
+												<td>감정지수</td>
+												<td>feels_like</td>
+												<td>269.11</td>
+												<td> - </td>
+											</tr>
+											<tr>
+												<td>최저 온도</td>
+												<td>temp_min</td>
+												<td>272.15</td>
+												<td> - </td>
+											</tr>
+											<tr>
+												<td>최대 온도</td>
+												<td>temp_max</td>
+												<td>275.15</td>
+												<td> - </td>
+											</tr>
+											<tr>
+												<td>풍속</td>
+												<td>speed</td>
+												<td>2.6</td>
+												<td> - </td>
+											</tr>
+											<tr>
+												<td>풍향</td>
+												<td>deg</td>
+												<td>310</td>
+												<td> - </td>
+											</tr>
+											<tr>
+												<td>지역이름</td>
+												<td>name</td>
+												<td>Changwon</td>
+												<td> - </td>
+											</tr>
+											</tbody>
+											
+										</table>
+									</div>
+
+								</div>
+							</section>
+<!-- Code -->
+<section>
+	<header>
+		<h3>Code</h3>
+	</header>
+	<div class="content">
+		<pre>
+			<code>
+curl --include --request GET
+'http://13.124.205.66:8001/kor_lec/lkj/api/
+nearby_tourist_information_service.php?mapX=126.981611&mapY=37.568477'
+			</code>
+		</pre>
+	</div>
+</section>
+							<section>
+								<header>
+									<h3>위치 기준 관광지 순서 나열</h3>
+								</header>
+								<div class="content">
+									<h4>Request</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>항목명(국문)</th>
+													<th>항목명(영문)</th>
+													<th>샘플 데이터</th>
+													<th>항목 설명</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>경도</td>
+													<td>mapX</td>
+													<td>129.101846</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>위도</td>
+													<td>mapY</td>
+													<td>37.772851</td>
+													<td> - </td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<h4>Response</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>항목명(국문)</th>
+													<th>항목명(영문)</th>
+													<th>샘플 데이터</th>
+													<th>항목 설명</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>도로명 주소</td>
+													<td>addr1</td>
+													<td>서울특별시 중구 세종대로 110</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>거리</td>
+													<td>dist</td>
+													<td>355</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>전화번호</td>
+													<td>tel</td>
+													<td>02-452-7228</td>
+													<td> - </td>
+												</tr>
+												<tr>
+													<td>행사명</td>
+													<td>title</td>
+													<td>서울365패션쇼 2020</td>
+													<td> - </td>
+												</tr>
+											</tbody>
+											
+										</table>
+									</div>
+
+								</div>
+							</section>
+
+							<!-- Code -->
+							<section>
+								<header>
+									<h3>Code</h3>
+								</header>
+								<div class="content">
+									<pre>
+										<code>
+curl --include --request GET
+'http://www.culture.go.kr/openapi/rest/publicperformancedisplays/period
+?'
+										</code>
+									</pre>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+				<section>
+				<!-- Footer -->
+					<!-- <footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer> -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
